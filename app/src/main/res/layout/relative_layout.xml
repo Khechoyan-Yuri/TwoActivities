@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <!-- FIRST NAME TextView & EditText -->
+        <TextView
+            android:id="@+id/tv_FirstName"
+            android:text="First Name:"
+            android:layout_width="wrap_content"
+            android:textSize="24dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_FirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="John"
+            android:layout_alignBaseline="@+id/tv_FirstName"
+            android:layout_alignBottom="@+id/tv_FirstName"
+            android:layout_toEndOf="@+id/tv_FirstName" />
+
+        <!-- LAST NAME TextView & EditText -->
+        <TextView
+            android:id="@+id/tv_LastName"
+            android:text="Last Name:"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_FirstName"/>
+
+        <EditText
+            android:id="@+id/et_LastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Smith"
+            android:layout_alignBaseline="@+id/tv_LastName"
+            android:layout_alignBottom="@+id/tv_LastName"
+            android:layout_alignStart="@+id/et_FirstName" />
+
+        <!-- PHONE NUMBER TextView & EditText -->
+        <TextView
+            android:id="@+id/tv_PhoneNumber"
+            android:text="Phone Number:"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_LastName"/>
+
+        <EditText
+            android:id="@+id/et_PhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(123) 456-7890"
+            android:layout_alignBaseline="@+id/tv_PhoneNumber"
+            android:layout_alignBottom="@+id/tv_PhoneNumber"
+            android:layout_toEndOf="@+id/tv_PhoneNumber" />
+
+        <!-- EMAIL ADDRESS TextView & EditText -->
+        <TextView
+            android:id="@+id/tv_EnterEmail"
+            android:text="Email Address:"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_PhoneNumber"/>
+
+        <EditText
+            android:id="@+id/et_EnterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="JSmith@example"
+            android:layout_alignBaseline="@+id/tv_EnterEmail"
+            android:layout_alignBottom="@+id/tv_EnterEmail"
+            android:layout_toEndOf="@+id/tv_EnterEmail" />
+
+        <!-- RE-ENTER EMAIL ADDRESS TextView & EditText -->
+        <TextView
+            android:id="@+id/tv_ReEnterEmail"
+            android:text="Re-enter Email:"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_EnterEmail"/>
+
+        <EditText
+            android:id="@+id/et_ReEnterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="JSmith@example"
+            android:layout_alignBaseline="@+id/tv_ReEnterEmail"
+            android:layout_alignBottom="@+id/tv_ReEnterEmail"
+            android:layout_toEndOf="@+id/tv_ReEnterEmail" />
+
+        <!-- USERNAME TextView & EditText -->
+        <TextView
+            android:id="@+id/tv_UserName"
+            android:text="Username:"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ReEnterEmail"/>
+
+        <EditText
+            android:id="@+id/et_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="JohnSmith"
+            android:layout_alignBaseline="@+id/tv_UserName"
+            android:layout_alignBottom="@+id/tv_UserName"
+            android:layout_alignStart="@+id/et_LastName" />
+
+        <!-- PASSWORD TextView & EditText-->
+        <TextView
+            android:id="@+id/tv_PassWord"
+            android:text="Password:"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_UserName"/>
+
+        <EditText
+            android:id="@+id/et_PassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:hint="Password"
+            android:layout_alignBaseline="@+id/tv_PassWord"
+            android:layout_alignBottom="@+id/tv_PassWord"
+            android:layout_toEndOf="@+id/tv_LastName" />
+
+        <!-- RE-ENTER PASSWORD TextView & EditText -->
+        <TextView
+            android:id="@+id/tv_ReEnterPassWord"
+            android:text="Re-enter Pass:"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_PassWord"/>
+
+        <EditText
+            android:id="@+id/et_ReEnterPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:hint="Password"
+            android:layout_alignBaseline="@+id/tv_ReEnterPassWord"
+            android:layout_alignBottom="@+id/tv_ReEnterPassWord"
+            android:layout_toEndOf="@+id/tv_ReEnterPassWord" />
+
+        <!-- RADIO BUTTONS - GENDER -->
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_below="@+id/et_ReEnterPassWord"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp">
+
+            <TextView
+                android:id="@+id/tv_Gender"
+                android:text="Gender:"
+                android:textSize="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radio_Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_toRightOf="@id/tv_Gender"
+                android:layout_below="@id/tv_ReEnterPassWord"
+                android:layout_alignBottom="@id/tv_Gender"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_toRightOf="@id/radio_Male"
+                android:layout_alignBottom="@id/radio_Male"
+                android:layout_marginTop="10dp"/>
+        </RadioGroup>
+
+        <!-- COUNTRY SPINNER TEXT -->
+        <TextView
+            android:id="@+id/tv_Country"
+            android:text="Country:"
+            android:textSize="24dp"
+            android:layout_marginTop="390dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Gender"/>
+
+        <!-- COUNTRY SPINNER -->
+        <Spinner
+            android:id="@+id/country_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/country_array"
+            android:layout_below="@id/radio_Male"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="200dp"/>
+
+        <!-- CLEAR BUTTON -->
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="ClearFields"/>
+
+        <!-- BUTTON FOR SWITCHING LAYOUTS -->
+        <Button
+            android:id="@+id/btn_Linear_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_clear"
+            android:layout_below="@id/tv_Country"
+            android:text="Linear"
+            android:onClick="Linear_Layout"
+            android:layout_alignBottom="@id/btn_clear"
+            android:layout_marginLeft="50dp"/>
+
+        <!-- SUBMIT BUTTON -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/country_spinner"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_alignRight="@id/btn_clear"
+            android:layout_alignStart="@id/btn_Linear_Layout"
+            android:onClick="Submit"/>
+
+
+    </RelativeLayout>
+</ScrollView>
